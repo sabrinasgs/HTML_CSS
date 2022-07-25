@@ -1,0 +1,51 @@
+<!--Aprendendo a criar um formulário-->
+<h1>Meu Formulário</h1>
+<form action="https://formspree.io/f/moqrgnwg" method="POST">
+    <p>
+        <label>Digite seu nome:</label><br>
+        <input placeholder="Digite algo..." type="text" required="required" value="Nome" name="Nome">
+            <!--Input é um campo escrito para respostas curtas-->
+            <!--Placeholder pede ao usuário que complete o campo-->
+            <!--Type define o tipo de dado que o campo irá receber-->
+            <!--Required é um campo obrigatório-->
+            <!--Value é um campo que já parece para o usuário preenchido e pode ser editado-->
+            <!--Name é para o recebimento de dados, o que foi preenchido-->
+    </p>
+    <p>
+        <label>Digite sua mensagem</label><br>
+        <textarea rows="10" cols="16" name="Mensagem" required placeholder="Digite algo..." >Mensagem</textarea> 
+            <!--Textarea é um campo maior para escrita-->
+    </p>
+    <p>
+        <label>Escolha os esportes que você pratica:</label><br>
+        <ul>
+            <li><input checked="checked" value="SIM" name="judô" type="checkbox"> Judô</li>
+            <li><input value="SIM" name="futebol" type="checkbox"> Futebol</li>
+            <li><input value="SIM" name="tênis" type="checkbox"> Tênis</li>
+                <!--Checkbox são caixinhas de alternativa que você pode selecionar mais de uma-->
+                <!--checked já vem com a opção marcada-->
+        </ul>
+    </p>
+    <p>
+        <label>Escolha sua cor favorita:</label><br>
+        <ul>
+            <li><input value="VERMELHO" name="corFavorita" type="radio">Vermelho </li>
+            <li><input value="AZUL" name="corFavorita" type="radio">Azul </li>
+            <li><input value="VERDE" name="corFavorita" type="radio">Verde </li>
+                <!--Radio é para apenas uma alternativa selecionavel-->
+        </ul>
+    </p>
+    <p>
+        <label>Escolha sua cidade</label><br>
+        <select>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Minas Gerais</option>
+        </select>
+            <!--Um botão de escolha-->
+    </p>
+    <p>
+        <input value="SIM" name="TermosDoContrato" type="checkbox"> Eu aceito os termos de uso do site.
+    </p>
+    <button type="submit">Enviar Dados</button>
+</form>

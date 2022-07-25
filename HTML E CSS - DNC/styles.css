@@ -1,0 +1,30 @@
+/* Arquivo referente ao div.html*/
+h1 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.allDivs{
+    border: 3px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+}
+#div1 { 
+    background-color: lightpink;
+    width: 300px;
+    height: 300px;
+}
+#div2{
+    background-color: lightseagreen;
+    width: 800px;
+    height: 80px;
+}
+#div3{
+    width: 50%;
+    height: 100px;
+    background-color:tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+}
+/*id é um para cada div
+class geralmente é a mesma para todos
+Podemos apenas entrar no elemento(tag), escrever style e colocar os atributos*/
